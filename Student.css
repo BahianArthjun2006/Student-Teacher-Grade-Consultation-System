@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar .logo{
+    margin-top: -15px;
+}
+
+.navbar .menu-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: -10px;
+    margin-left: auto;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+    color: #c06b3e;
+
+}
+
+.dashboard-section{
+    padding-top: 120px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.dashboard-section h1{
+    margin-bottom: 20px;
+}
+
+.dashboard-buttons label{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dashboard-buttons label:hover{
+    background: #c06b3e;
+}
+
+input[name="tab"]{
+    display: none;
+}
+
+.section{
+    display: none;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#tab1:checked ~ .dashboard-content .section1,
+#tab2:checked ~ .dashboard-content .section2,
+#tab3:checked ~ .dashboard-content .section3,
+#tab4:checked ~ .dashboard-content .section4{
+    display: block;
+}
+
+.btn-action{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #c06b3e;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}

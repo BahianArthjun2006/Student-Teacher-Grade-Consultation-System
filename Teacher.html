@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COC GradeHub - Teacher</title>
+    <link rel="stylesheet" href="css/Teacher.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Teacher.html" class="logo">COC GradeHub.</a>
+            <ul class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Login.html">Log out</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard-section">
+
+        <h1>Teacher Dashboard</h1>
+        <input type="radio" name="teacher-tab" id="viewGrades" checked>
+        <input type="radio" name="teacher-tab" id="editGrades">
+        <input type="radio" name="teacher-tab" id="viewRequests">
+        <input type="radio" name="teacher-tab" id="comments">
+
+        <div class="dashboard-buttons">
+            <label for="viewGrades">View Grades</label>
+            <label for="editGrades">Edit Grades</label>
+            <label for="viewRequests">View Requests</label>
+            <label for="comments">Comments & Feedback</label>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="section section1" id="gradesSection">
+                <h2>All Student Grades</h2>
+                <p><br> Regodon: <br> Project: <br> Quiz: <br> Assignment: <br> Exam: <br> Class Standing: <br> Final Grade: <br></p><br><hr>
+                <p><br> Sumahon: <br> Project: <br> Quiz: <br> Assignment: <br> Exam: <br> Class Standing: <br> Final Grade: <br></p>
+            </div>
+
+            <div class="section section2" id="editSection">
+                <h2>Edit Student Grades</h2>
+                <p>Select a student and type grades: </p>
+                <label>Project: <input type="number" placeholder="0-100"></label><br><br>
+                <label>Quiz: <input type="number" placeholder="0-100"></label><br><br>
+                <label>Assignment: <input type="number" placeholder="0-100"></label><br><br>
+                <label>Exam: <input type="number" placeholder="0-100"></label><br><br>
+                <button class="btn-action">Submit Grades</button>
+            </div>
+
+            <div class="section section3" id="requestsSection">
+                <h2>Grade Requests</h2>
+                <p>Regodon requested grade review.</p>
+                <p>Sumahon requested grade review.</p>
+                <button class="btn-action">Clear All Requests</button>
+            </div>
+
+            <div class="section section4" id="commentsSection">
+                <h2>Comments & Feedback</h2>
+                <p>Regodon: Thanks</p>
+                <textarea placeholder="Add comment"></textarea>
+                <button class="btn-action">Submit Comment</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

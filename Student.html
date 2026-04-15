@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COC GradeHub - Student</title>
+    <link rel="stylesheet" href="css/Student.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">COC GradeHub.</a>
+                <ul class="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Login.html">Log out</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="Contactus.html">Contact Us</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard-section">
+
+    <h1>Student Dashboard</h1>
+
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <input type="radio" name="tab" id="tab4">
+
+    <div class="dashboard-buttons">
+        <label for="tab1">View Grades</label>
+        <label for="tab2">Request Grade</label>
+        <label for="tab3">Cancel Request</label>
+        <label for="tab4">Comments</label>
+    </div>
+
+    <div class="dashboard-content">
+
+        <div class="section section1">
+            <h2>Your Grades</h2>
+            <p>Project: </p>
+            <p>Quiz: </p>
+            <p>Assignment: </p>
+            <p>Behavior: </p>
+            <p>Exam: </p>   
+            <p>Class Standing: </p>
+            <p>Final Grade: </p>
+        </div>
+
+        <div class="section section2">
+            <h2>Request Grade</h2>
+            <h6>Request Sent</h6>
+            <button class="btn-action">Request Now</button>
+        </div>
+
+        <div class="section section3">
+            <h2>Cancel Request</h2>
+            <h6>Are you Sure?</h6>
+            <button class="btn-action">Cancel Request</button>
+        </div>
+
+        <div class="section section4">
+            <h2>Comments</h2>
+            <h6> Thanks, has been sent. </h6>
+            <textarea placeholder="Write comment..."></textarea>
+            <button class="btn-action">Submit</button>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

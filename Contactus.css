@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0D1117;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar .logo{
+    margin-top: -15px;
+}
+
+.navbar .menu-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: -10px;
+    margin-left: auto;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+    color: #c06b3e;
+
+}
+
+.contact-section {
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #2E2E2E;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.contact-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-container p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    font-size: 16px;
+    background: #1C1C1E;
+    color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #c06b3e;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a05a2f;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 30px 20px;
+    }
+}
